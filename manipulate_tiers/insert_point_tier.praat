@@ -18,7 +18,7 @@
 #
 #                       HOW TO CITE
 #	Mendez, R. (2023). Insert Point Tier. v.1.0 
-#	Praat Script. Retrieved [DATE] from (LINK TO GITHUB REPOSITORY)
+#	Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/insert_point_tier.praat
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher

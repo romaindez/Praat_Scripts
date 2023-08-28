@@ -17,7 +17,7 @@
 #
 #							HOW TO CITE
 #	Mendez, R. (2023). Duration as Label. 
-#	v.1.0 Praat Script. Retrieved [DATE] from (LINK TO GITHUB REPOSITORY)
+#	v.1.0 Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/acoustic_data_extraction/duration_as_label.praat
 #
 #                     	 COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher

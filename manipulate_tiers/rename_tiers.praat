@@ -22,7 +22,7 @@
 #
 #                       HOW TO CITE
 #	Mendez, R. (2023). Rename Tiers. v.1.0 
-#	Praat Script. Retrieved [DATE] from (LINK TO GITHUB REPOSITORY)
+#	Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/rename_tiers.praat
 #
 #                            LICENSE
 #

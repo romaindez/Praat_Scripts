@@ -2,7 +2,7 @@
 
 Praat is a widely used software package and programming language designed for the analysis, synthesis, and manipulation of speech and phonetics (Boersma & Weenink, 2023). [Boersma, Paul & Weenink, David (2023). Praat: doing phonetics by computer [Computer program]. Version 6.3.14, retrieved 5 August 2023 from http://www.praat.org/]
 
-This repository contains several open-source Praat scripts. They are designed to automate some of the most common tasks in speech research. They are intended to be used by researchers and students who are familiar with Praat and have some basic knowledge of scripting. Each script has a header with instructions on how to use it as well as a description of the task it performs. Please read the header carefully before using the script.
+This repository contains several open-source Praat scripts divided in two folders. They are designed to automate some of the most common tasks in speech research. They are intended to be used by researchers and students who are familiar with Praat and have some basic knowledge of scripting. Each script has a header with instructions on how to use it as well as a description of the task it performs. Please read the header carefully before using the script.
 
 The scripts are written in Praat's own programming language. For more information please visit: https://www.fon.hum.uva.nl/praat/manual/Scripting.html.
 They are distributed under the GNU General Public License v3.0 (see [License information](#license-information)).
@@ -33,7 +33,7 @@ If you wish to cite a specific script, please check the header of said script fo
 ## Running the Script
 
 1. Open `Praat` (version 6.3.xx or compatible).
-2. From the `Praat` menu, go to `Praat > Open Praat script...` and select the script you placed in step 1 of the [Setup](##Setup).
+2. From the `Praat` menu, go to `Praat > Open Praat script...` and select the script you placed in step 1 of the [Setup](#Setup).
 3. The script will open, and you'll usually see a form with several options.
 4. After entering the required information, click the `Run` button to execute the script.
 
