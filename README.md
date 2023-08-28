@@ -16,7 +16,7 @@ These scripts are compatible with `Praat` version 6.0 and higher and may not wor
 ## How to cite
 
 You can cite this repository as follows:
-Mendez, R. (2023). Praat Scripts. Retrieved [DD MM YYYY] from (LINK TO GITHUB REPOSITORY).
+Mendez, R. (2023). Praat Scripts. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts
 
 If you wish to cite a specific script, please check the header of said script for the correct citation.
 
