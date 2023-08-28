@@ -22,7 +22,7 @@ If you wish to cite a specific script, please check the header of said script fo
 
 ## Setup
 
-1. Place the scripts files in a convenient location on your computer.
+Place the scripts files in a convenient location on your computer.
 
 ## Preparing the TextGrid/Audio Files
 
