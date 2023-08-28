@@ -23,6 +23,8 @@
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
 #   and may not work correctly with other versions.
+#	Make sure your software is up-do-date before trying to 
+#	use this script
 #
 #
 #                            LICENSE
