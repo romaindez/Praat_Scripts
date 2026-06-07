@@ -29,12 +29,13 @@
 #
 #                     	 COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   and may not work correctly with older versions. 
-#	Make sure your software is up-do-date before trying to 
+#   Tested and optimized for Praat 6.3.14+
+#	Make sure your software is up-to-date before trying to 
 #	use this script.
 #
 #                    VERSION HISTORY & LICENSE
 #
+#   1.1 - 2026 - Fixed deprecated Praat syntax, improved code structure
 #   1.0 - 05-08-2023 - Initial release	
 #   This script is distributed under the GNU General Public License v3.0.
 #   This script is free software: you can redistribute it and/or modify

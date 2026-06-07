@@ -16,13 +16,13 @@
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   and may not work correctly with other versions. 
-#	Make sure your software is up-do-date before trying to 
+#   Tested and optimized for Praat 6.3.14+
+#	Make sure your software is up-to-date before trying to 
 #	use this script
 #
 #                       HOW TO CITE
-#	Mendez, R. (2023). Rename Tiers. v.1.0 
-#	Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/rename_tiers.praat
+#	Mendez, R. (2026). Rename Tiers. v.1.1 (optimized)
+#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/rename_tiers.praat
 #
 #                            LICENSE
 #
@@ -62,34 +62,31 @@ directory_export$ = directory_Export$
 ############### MAIN SCRIPT ###############
 # Create Strings as file list and get the number of files
 if directory_import$ != directory_export$
-Create Strings as file list... list 'directory_Import$'/*.TextGrid
-numFiles = Get number of strings
-# Iterate through each file in the list
-for ifile to numFiles
-	select Strings list
-	fileName$ = Get string... ifile
-	Read from file... 'directory_Import$'/'fileName$'
-	# Get the user-selected tier index and new tier name from the form
-	tierNumber = 'Tier_Number'
-	newTierName$ = replace_Name_of_Tier$
-	totalTiers =  Get number of tiers
-	for n to totalTiers
-	# Check if the selected tier index is within the valid range
-		if (tierNumber >= 1) & (tierNumber <= totalTiers)
-		# Rename the selected tier to the new tier name
-		Set tier name: tierNumber, newTierName$
-		# Save the modified TextGrid file with the same name in the same directory
-		Save as text file... 'directory_Export$'/'fileName$'
+	Create Strings as file list... list 'directory_Import$'/*.TextGrid
+	numFiles = Get number of strings
+	# Iterate through each file in the list
+	for ifile to numFiles
+		select Strings list
+		fileName$ = Get string: ifile
+		Read from file... 'directory_Import$'/'fileName$'
+		# Get the user-selected tier index and new tier name from the form
+		tierNumber = 'Tier_Number'
+		newTierName$ = replace_Name_of_Tier$
+		totalTiers = Get number of tiers
+		# Check if the selected tier index is within the valid range
+		if (tierNumber >= 1) and (tierNumber <= totalTiers)
+			# Rename the selected tier to the new tier name
+			Set tier name: tierNumber, newTierName$
+			# Save the modified TextGrid file with the same name in the same directory
+			Save as text file... 'directory_Export$'/'fileName$'
 		else
-		# Show an error message if the selected tier index is invalid
-        exitScript: "Error: Selected tier number is out of range! 
-        Please check that the tier number you selected exists in your TextGrid!"
+			# Show an error message if the selected tier index is invalid
+			exitScript: "Error: Selected tier number is out of range! Please check that the tier number you selected exists in your TextGrid!"
 		endif
 	endfor
 else 
 	exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
 endif
-	endfor
 # Clear object list
 select all
 Remove

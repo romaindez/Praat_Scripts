@@ -35,10 +35,13 @@
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   and may not work correctly with other versions. 
-#	Make sure your software is up-do-date before trying to 
+#   Tested and optimized for Praat 6.3.14+
+#	Make sure your software is up-to-date before trying to 
 #	use this script
 #
+#                       HOW TO CITE
+#	Mendez, R. (2026). Remove Tiers. v.1.1 (optimized)
+#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/remove_tiers.praat
 #
 #                            LICENSE
 #
@@ -77,34 +80,30 @@ directory_export$ = export_Directory$
 ############### MAIN SCRIPT ###############
 # Create Strings as file list and get the number of files
 if directory_import$ != directory_export$
- Create Strings as file list... list 'Import_Directory$'/*.TextGrid
- num = Get number of strings
- # Loop through each file in the list
- for ifile to num
-     select Strings list
-     fileName$ = Get string... ifile
-     Read from file... 'Import_Directory$'/'fileName$'
-     # Get the selected tier number from the form
-     tierNum = 'Tier_Number'
-     totalTiers =  Get number of tiers
-     # Loop through each tier in the TextGrid file
-     for n to totalTiers
-         # Check if the selected tier index is within the valid range
-         if (tierNum >= 1) & (tierNum <= totalTiers)
-         # Remove the tier with the specified index (tierNum)
-         nocheck Remove tier: 'tierNum'
-         # Save the modified TextGrid file to the Export_Directory
-         Save as text file... 'Export_Directory$'/'fileName$'
-         else
-         # Show an error message if the selected tier index is invalid
-         exitScript: "Error: Selected tier number is out of range! 
-         Please check that the tier number you selected exists in your TextGrid!"
-         endif
-     endfor
+	Create Strings as file list... list 'Import_Directory$'/*.TextGrid
+	num = Get number of strings
+	# Loop through each file in the list
+	for ifile to num
+		select Strings list
+		fileName$ = Get string: ifile
+		Read from file... 'Import_Directory$'/'fileName$'
+		# Get the selected tier number from the form
+		tierNum = 'Tier_Number'
+		totalTiers = Get number of tiers
+		# Check if the selected tier index is within the valid range
+		if (tierNum >= 1) and (tierNum <= totalTiers)
+			# Remove the tier with the specified index (tierNum)
+			nocheck Remove tier: tierNum
+			# Save the modified TextGrid file to the Export_Directory
+			Save as text file... 'Export_Directory$'/'fileName$'
+		else
+			# Show an error message if the selected tier index is invalid
+			exitScript: "Error: Selected tier number is out of range! Please check that the tier number you selected exists in your TextGrid!"
+		endif
+	endfor
 else 
-        exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
+	exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
 endif
-    endfor
  # Clear object list to avoid clutter
  select all
  Remove

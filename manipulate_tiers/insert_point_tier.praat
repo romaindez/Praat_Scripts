@@ -17,13 +17,13 @@
 #   https://github.com/romaindez
 #
 #                       HOW TO CITE
-#	Mendez, R. (2023). Insert Point Tier. v.1.0 
-#	Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/insert_point_tier.praat
+#	Mendez, R. (2026). Insert Point Tier. v.1.1 (optimized)
+#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/insert_point_tier.praat
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   and may not work correctly with other versions.
-#	Make sure your software is up-do-date before trying to 
+#   Tested and optimized for Praat 6.3.14+
+#	Make sure your software is up-to-date before trying to 
 #	use this script
 #
 #
@@ -65,23 +65,23 @@ directory_export$ = directory_Export$
 ############### MAIN SCRIPT ###############
 # Create Strings as file list and get the number of files
 if directory_import$ != directory_export$
-Create Strings as file list... list 'directory_Import$'/*.TextGrid
-numFiles = Get number of strings
+	Create Strings as file list... list 'directory_Import$'/*.TextGrid
+	numFiles = Get number of strings
 	# Iterate through each file in the list
 	for ifile to numFiles
 		select Strings list
-		fileName$ = Get string... ifile
+		fileName$ = Get string: ifile
 		Read from file... 'directory_Import$'/'fileName$'	
-	# Get the user-selected tier index and new tier name from the form
+		# Get the user-selected tier index and new tier name from the form
 		tierNumber = 'Tier_Position'
 		tierLabel$ = tier_Label$
-	#Insert the point tier
+		#Insert the point tier
 		Insert point tier: tierNumber, tierLabel$
-	# Save the modified TextGrid file with the same name in the selected directory
+		# Save the modified TextGrid file with the same name in the selected directory
 		Save as text file... 'directory_Export$'/'fileName$'
 	endfor
 else 
-exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
+	exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
 endif
 # Clear object list
 select all

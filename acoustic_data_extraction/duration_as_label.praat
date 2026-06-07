@@ -16,13 +16,13 @@
 #  	https://github.com/romaindez
 #
 #							HOW TO CITE
-#	Mendez, R. (2023). Duration as Label. 
-#	v.1.0 Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/acoustic_data_extraction/duration_as_label.praat
+#	Mendez, R. (2026). Duration as Label. v.1.1 (optimized)
+#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/acoustic_data_extraction/duration_as_label.praat
 #
 #                     	 COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   and may not work correctly with other versions. 
-#	Make sure your software is up-do-date before trying to 
+#   Tested and optimized for Praat 6.3.14+
+#	Make sure your software is up-to-date before trying to 
 #	use this script
 #
 #
@@ -68,7 +68,6 @@ intervalLabel$ = interval_Label$
 # Create a file list and get the number of files
 if dirImp$ != dirExp$
 	Create Strings as file list... list 'dirImp$'/*.TextGrid
- 
 	# Get the number of files in the list 
 	numFiles = Get number of strings
 	# Show a message in case there are no files
@@ -108,12 +107,12 @@ if dirImp$ != dirExp$
 				Replace interval text... 'tierNumber' i i 'newLabel$' 'durSilence$' Literals
 			endif
 		endfor
-	else 
-		exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
-	endif
-	# Save the modified TextGrid
-	Save as text file... 'dirExp$'/'fileName$'
-endfor
+		# Save the modified TextGrid
+		Save as text file... 'dirExp$'/'fileName$'
+	endfor
+else 
+	exitScript: "ERROR: The import and export folders are the same. In order to avoid overwriting your files, please choose separate folders."
+endif
 # Clear object list
 select all
 Remove
