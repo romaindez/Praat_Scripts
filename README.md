@@ -1,6 +1,6 @@
 # Praat Scripts
 
-Praat is a widely used software package and programming language designed for the analysis, synthesis, and manipulation of speech and phonetics (Boersma & Weenink, 2023). [Boersma, Paul & Weenink, David (2023). Praat: doing phonetics by computer [Computer program]. Version 6.3.14, retrieved 7 June 2026 from http://www.praat.org/]
+Praat is a widely used software package and programming language designed for the analysis, synthesis, and manipulation of speech and phonetics (Boersma & Weenink, 2023). [Boersma, Paul & Weenink, David (2023). Praat: doing phonetics by computer [Computer program]. Version 6.4.67, retrieved 7 June 2026 from http://www.praat.org/]
 
 This repository contains several open-source Praat scripts divided into two folders. They are designed to automate some of the most common tasks in speech research. They are intended to be used by researchers and students who are familiar with Praat and have some basic knowledge of scripting. Each script has a header with instructions on how to use it as well as a description of the task it performs. Please read the header carefully before using the script.
 
@@ -11,7 +11,7 @@ They are distributed under the GNU General Public License v3.0 (see [License inf
 
 ## Compatibility
 
-These scripts are compatible with `Praat` version 6.0 and higher. They have been tested and optimized for Praat 6.3.14+. Make sure your software is up-to-date before trying to use any of the scripts provided.
+These scripts are compatible with `Praat` version 6.0 and higher. They have been tested and optimized for Praat 6.4.67+. Make sure your software is up-to-date before trying to use any of the scripts provided.
 
 ## How to cite
 
@@ -32,7 +32,7 @@ Place the scripts files in a convenient location on your computer.
 
 ## Running the Script
 
-1. Open `Praat` (version 6.3.xx or compatible).
+1. Open `Praat` (version 6.4.xx or compatible).
 2. From the `Praat` menu, go to `Praat > Open Praat script...` and select the script you placed in step 1 of the [Setup](#Setup).
 3. The script will open, and you'll usually see a form with several options.
 4. After entering the required information, click the `Run` button to execute the script.

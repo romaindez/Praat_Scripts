@@ -35,7 +35,7 @@
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
-#   Tested and optimized for Praat 6.3.14+
+#   Tested and optimized for Praat 6.4.67+
 #	Make sure your software is up-to-date before trying to 
 #	use this script
 #
