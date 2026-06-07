@@ -11,7 +11,7 @@ They are distributed under the GNU General Public License v3.0 (see [License inf
 
 ## Compatibility
 
-These scripts are compatible with `Praat` version 6.0 and higher. They have been tested and optimized for Praat 6.4.67+. Make sure your software is up-to-date before trying to use any of the scripts provided.
+These scripts are compatible with `Praat` version 6.4 and higher. Make sure your software is up-to-date before trying to use any of the scripts provided.
 
 ## How to cite
 
