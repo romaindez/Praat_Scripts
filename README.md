@@ -49,7 +49,7 @@ Once the script finishes executing, you will see a message indicating if the pro
 ## Troubleshooting and Contributions
 
 - If an error occurs, please read it carefully, ensure that you have provided correct inputs. Make sure your TextGrid and audio files are properly named and formatted and that you have carefully followed the instructions provided here and on the header of each script.
-- If you encounter any issues or have questions, please feel free to create a pull request or raise an issue in the repository. You can also reach out for assistance at [romainmendz@gmail.com](mailto:romainmendz@gmail.com).
+- If you encounter any issues or have questions, please feel free to create a pull request or raise an issue in the repository.
 - Contributions to the scripts are welcome!
 
 # Important Note
