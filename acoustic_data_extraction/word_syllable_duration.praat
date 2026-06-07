@@ -50,7 +50,7 @@
 #	See the GNU General Public License for more details.
 #	https://www.gnu.org/licenses/gpl-3.0.en.html
 #
-#	© Copyright 2023 - Romain Mendez [romainmendz@gmail.com]
+#	© Copyright 2026 - Romain Mendez [romainmendz@gmail.com]
 #
 ############################################################################
 

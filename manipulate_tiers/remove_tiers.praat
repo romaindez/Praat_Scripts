@@ -30,8 +30,8 @@
 #   https://github.com/romaindez
 #
 #                       HOW TO CITE
-#	Mendez, R. (2023). Remove Tiers. v.1.0 
-#	Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/remove_tiers.praat
+#	Mendez, R. (2026). Remove Tiers.
+#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/remove_tiers.praat
 #
 #                         COMPATIBILITY 
 #   This script is compatible with Praat version 6.0 or higher
@@ -39,9 +39,6 @@
 #	Make sure your software is up-to-date before trying to 
 #	use this script
 #
-#                       HOW TO CITE
-#	Mendez, R. (2026). Remove Tiers. v.1.1 (optimized)
-#	Praat Script. Retrieved [DD MM YYYY] from https://github.com/romaindez/Praat_Scripts/blob/main/manipulate_tiers/remove_tiers.praat
 #
 #                            LICENSE
 #
@@ -57,7 +54,7 @@
 #   See the GNU General Public License for more details.
 #    https://www.gnu.org/licenses/gpl-3.0.en.html
 #
-#   © Copyright 2023 - Romain Mendez [romainmendz@gmail.com]
+#   © Copyright 2026 - Romain Mendez [romainmendz@gmail.com]
 #
 ############################################################################
 

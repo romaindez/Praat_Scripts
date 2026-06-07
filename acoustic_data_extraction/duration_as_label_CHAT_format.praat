@@ -24,7 +24,7 @@
 #  	https://github.com/romaindez
 #
 #							HOW TO CITE
-#	Mendez, R. (2023). Duration as Label (CHAT format). 
+#	Mendez, R. (2026). Duration as Label (CHAT format). 
 #	v.1.0 Praat Script. Retrieved [DATE] from https://github.com/romaindez/Praat_Scripts/blob/main/acoustic_data_extraction/duration_as_label_CHAT_format.praat. 
 #
 #                     	 COMPATIBILITY 
@@ -49,7 +49,7 @@
 #	See the GNU General Public License for more details.
 #	https://www.gnu.org/licenses/gpl-3.0.en.html
 #
-#	© Copyright 2023 - Romain Mendez [romainmendz@gmail.com]
+#	© Copyright 2026 - Romain Mendez [romainmendz@gmail.com]
 #
 ############################################################################
 
